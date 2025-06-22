@@ -62,7 +62,8 @@ def generate_images(digit, num_images=5):
         return generated_images.numpy()
 
 # --- Interfaz de Usuario de la App ---
-st.set_page_config(layout="wide")
+st.set_page_config( layout="wide",
+    initial_sidebar_state="expanded")
 st.title("🖌️ Generador de Dígitos Manuscritos con IA")
 st.write(
     "This app use a model trained on the MNIST dataset to generate new handwritten digit images."
